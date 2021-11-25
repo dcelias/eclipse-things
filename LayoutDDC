@@ -15,34 +15,34 @@ public class MyLayout {
 		gridLayout.marginBottom = 10;
 		shell.setLayout (gridLayout);
 
-		Label Pacote ChangeMan = new Label (shell, SWT.NONE);
-		Pacote ChangeMan.setText ("Pacote ChangeMan");
+		Label pacote = new Label (shell, SWT.NONE);
+		pacote.setText ("pacote");
 		
 		Text  = new Text (shell, SWT.BORDER);
 		.setText ("");
 		GridData data = new GridData (210, SWT.DEFAULT);
 		.setLayoutData (data);
 
-		Label Nome componente DDL = new Label (shell, SWT.NONE);
-		Nome componente DDL.setText ("Nome componente DDL");
+		Label componenteDDL = new Label (shell, SWT.NONE);
+		componenteDDL.setText ("componenteDDL");
 		
 		Text  = new Text (shell, SWT.BORDER);
 		.setText ("");
 		data = new GridData (210, SWT.DEFAULT);
 		.setLayoutData (data);
 
-		Label Dia e mês que executará a rotina DDL (ddmm) = new Label (shell, SWT.NONE);
-		Dia e mês que executará a rotina DDL (ddmm).setText ("Dia e mês que executará a rotina DDL (ddmm)");
+		Label dataExec = new Label (shell, SWT.NONE);
+		dataExec.setText ("dataExec");
 		
 		Text  = new Text (shell, SWT.BORDER);
 		.setText ("");
 		data = new GridData (210, SWT.DEFAULT);
 		.setLayoutData (data);
 
-		Label Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula) = new Label (shell, SWT.NONE);
-		Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula).setText ("Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula)");
+		Label rotinasPredecessoras = new Label (shell, SWT.NONE);
+		rotinasPredecessoras.setText ("rotinasPredecessoras");
 		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
-		Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula).setLayoutData (data);
+		rotinasPredecessoras.setLayoutData (data);
 
 		StyledText  = new StyledText (shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
 		.setText ("");
@@ -51,10 +51,10 @@ public class MyLayout {
 		data.heightHint = 50;
 		.setLayoutData (data);
 
-		Label Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula) = new Label (shell, SWT.NONE);
-		Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula).setText ("Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula)");
+		Label rotinasSucessoras = new Label (shell, SWT.NONE);
+		rotinasSucessoras.setText ("rotinasSucessoras");
 		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
-		Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula).setLayoutData (data);
+		rotinasSucessoras.setLayoutData (data);
 
 		StyledText  = new StyledText (shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
 		.setText ("");
@@ -63,14 +63,14 @@ public class MyLayout {
 		data.heightHint = 50;
 		.setLayoutData (data);
 
-		Label Squad Responsável : Thanos = new Label (shell, SWT.NONE);
-		Squad Responsável : Thanos.setText ("Squad Responsável : Thanos");
+		Label responsavel = new Label (shell, SWT.NONE);
+		responsavel.setText ("responsavel");
 		
 		Label  = new Label (shell, SWT.NONE);
 		.setText ("");
 		
-		Link Para suporte a esta funcionalidade acesse:  = new Link (shell, SWT.NONE);
-		Para suporte a esta funcionalidade acesse: .setText ("Para suporte a esta funcionalidade acesse: ");
+		Link linkSuporte = new Link (shell, SWT.NONE);
+		linkSuporte.setText ("linkSuporte");
 		
 		shell.pack ();
 		shell.open ();
