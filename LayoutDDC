@@ -1,0 +1,84 @@
+import org.eclipse.swt.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+public class MyLayout {
+	public static void main (String [] args) {
+		Display display = new Display ();
+		Shell shell = new Shell (display);
+		GridLayout gridLayout = new GridLayout (2, true);
+		gridLayout.marginWidth = 10;
+		gridLayout.marginHeight = 10;
+		gridLayout.marginLeft = 10;
+		gridLayout.marginRight = 10;
+		gridLayout.marginTop = 10;
+		gridLayout.marginBottom = 10;
+		shell.setLayout (gridLayout);
+
+		Label Pacote ChangeMan = new Label (shell, SWT.NONE);
+		Pacote ChangeMan.setText ("Pacote ChangeMan");
+		
+		Text  = new Text (shell, SWT.BORDER);
+		.setText ("");
+		GridData data = new GridData (210, SWT.DEFAULT);
+		.setLayoutData (data);
+
+		Label Nome componente DDL = new Label (shell, SWT.NONE);
+		Nome componente DDL.setText ("Nome componente DDL");
+		
+		Text  = new Text (shell, SWT.BORDER);
+		.setText ("");
+		data = new GridData (210, SWT.DEFAULT);
+		.setLayoutData (data);
+
+		Label Dia e mês que executará a rotina DDL (ddmm) = new Label (shell, SWT.NONE);
+		Dia e mês que executará a rotina DDL (ddmm).setText ("Dia e mês que executará a rotina DDL (ddmm)");
+		
+		Text  = new Text (shell, SWT.BORDER);
+		.setText ("");
+		data = new GridData (210, SWT.DEFAULT);
+		.setLayoutData (data);
+
+		Label Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula) = new Label (shell, SWT.NONE);
+		Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula).setText ("Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula)");
+		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
+		Rotina(s) predecessora(s) (Informe rotinas separadas por vírgula).setLayoutData (data);
+
+		StyledText  = new StyledText (shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
+		.setText ("");
+		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
+		data.widthHint = 200;
+		data.heightHint = 50;
+		.setLayoutData (data);
+
+		Label Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula) = new Label (shell, SWT.NONE);
+		Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula).setText ("Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula)");
+		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
+		Rotina(s) sucessora(s) (Informe rotinas separadas por vírgula).setLayoutData (data);
+
+		StyledText  = new StyledText (shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
+		.setText ("");
+		data = new GridData (SWT.BEGINNING, SWT.BEGINNING, false, false);
+		data.widthHint = 200;
+		data.heightHint = 50;
+		.setLayoutData (data);
+
+		Label Squad Responsável : Thanos = new Label (shell, SWT.NONE);
+		Squad Responsável : Thanos.setText ("Squad Responsável : Thanos");
+		
+		Label  = new Label (shell, SWT.NONE);
+		.setText ("");
+		
+		Link Para suporte a esta funcionalidade acesse:  = new Link (shell, SWT.NONE);
+		Para suporte a esta funcionalidade acesse: .setText ("Para suporte a esta funcionalidade acesse: ");
+		
+		shell.pack ();
+		shell.open ();
+
+		while (!shell.isDisposed ()) {
+			if (!display.readAndDispatch ())
+				display.sleep ();
+		}
+		display.dispose ();
+	}
+}
